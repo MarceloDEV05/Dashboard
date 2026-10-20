@@ -1,11 +1,12 @@
-import { Search } from "lucide-react"
-import { Clients } from "../ClientsFicts/Clients"
+import { Search } from "lucide-react";
+import { Clients } from "../ClientsFicts/Clients.ts";
+
 export const AppointmentsTable = () => {
     return(
         <div className="border h-full p-3 flex flex-col gap-5 rounded-2xl">
             <div className="flex gap-3 p-2 border rounded-xl">
                 <Search/>
-                <input type="search" placeholder="Pesquisar Agendamentos..."/>
+                <input type="search" placeholder="Pesquisar Agendamentos..." className="w-full outline-none"/>
             </div>
             { Clients.map((client) => (
                 <div className="flex w-full justify-between pt-3 pb-3 items-center border-t border-b px-3">

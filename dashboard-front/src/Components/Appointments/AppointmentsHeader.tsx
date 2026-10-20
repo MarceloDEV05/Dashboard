@@ -11,8 +11,8 @@ export const AppointmentsHeader = () => {
             </h2>
          </div>
 
-         <div className="flex flex-col w-30 items-center text-white p-3 bg-black rounded-md">
-                <button className="font-bold">+Novo</button>
+         <div className="flex flex-col items-center text-white p-3 bg-black rounded-md">
+                <button className="font-bold flex items-center">+Novo Agendamento</button>
          </div>
         </div>
     )
