@@ -12,7 +12,7 @@ export const SideBar = () => {
           </h1>
 
           <nav>
-            <ul className="flex flex-col gap-5">
+            <ul className="flex flex-col gap-5 pt-40">
               <li>Dashboard</li>
               <li>Agendamentos</li>
               <li>Serviços</li>
