@@ -4,9 +4,9 @@ import { CircleDollarSign, Clock } from "lucide-react"
 
 export const ServiceOptions = () => {
     return(
-        <div className="grid grid-cols-4 pt-20 h-full">
+        <div className="grid grid-cols-4 pt-15 h-full pb-2 gap-y-8">
             {Services.map((service) => (
-                <div className=" w-80 mb-10 shadow-2xl shadow-gray-400 rounded-2xl p-2 ">
+                <div className=" w-70 shadow-2xl shadow-gray-400 rounded-2xl p-2 ">
 
                     <div className="flex flex-col gap-2">
                     <img src={service.img} alt="" className="rounded-t-xl" />
@@ -14,7 +14,7 @@ export const ServiceOptions = () => {
                     <p className="text-sm text-gray-500 line-clamp-4 lg:line-clamp-none px-3">{service.description}</p>
                     </div>
 
-                    <div className="flex justify-between px-5 p-3 items-center">
+                    <div className="flex justify-between px-5 py-2 items-center">
                         <p className="flex items-center gap-1 text-green-400">
                             <CircleDollarSign size={15}/>
                             R${service.price},00
