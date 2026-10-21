@@ -1,4 +1,4 @@
-import { Services } from "../ServicesFicts/Services.ts"
+import { Services } from "../fakeInfos/Services/Services.ts"
 import { CircleDollarSign, Clock } from "lucide-react"
 
 

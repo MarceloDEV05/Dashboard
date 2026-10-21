@@ -1,5 +1,5 @@
 import { Search } from "lucide-react";
-import { Clients } from "../ClientsFicts/Clients.ts";
+import { Clients } from "../fakeInfos/Clients/Clients.ts";
 
 export const AppointmentsTable = () => {
     return(
