@@ -5,6 +5,7 @@ import { Layout } from "./Components/Layout/Layout";
 import { Appointments } from "./Pages/Appointments/Appointments";
 import { Services } from "./Pages/Services/Services";
 import { Clients } from "./Pages/Clients/Clients";
+import { Finance } from "./Pages/Finance/Finance";
 
 export const router = createBrowserRouter([
   {
@@ -25,7 +26,11 @@ export const router = createBrowserRouter([
       {
         path: "/clients",
         element: <Clients />
-      }
+      },
+      {
+        path: "/finance",
+        element: <Finance />
+      },
     ],
   },
 ]);
