@@ -6,6 +6,7 @@ import { Appointments } from "./Pages/Appointments/Appointments";
 import { Services } from "./Pages/Services/Services";
 import { Clients } from "./Pages/Clients/Clients";
 import { Finance } from "./Pages/Finance/Finance";
+import { Settings } from "./Pages/Settings/Settings";
 
 export const router = createBrowserRouter([
   {
@@ -31,6 +32,11 @@ export const router = createBrowserRouter([
         path: "/finance",
         element: <Finance />,
       },
+      {
+        path: "/settings",
+        element: <Settings />,
+      },
+      
     ],
   },
 ]);

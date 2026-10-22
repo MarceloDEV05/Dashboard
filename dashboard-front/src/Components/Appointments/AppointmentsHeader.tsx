@@ -1,8 +1,12 @@
+import { CalendarCheck } from "lucide-react";
+
 export const AppointmentsHeader = () => {
   return (
     <div className="flex justify-between items-center">
       <div>
-        <h1 className="text-3xl font-bold"> Agendamentos </h1>
+        <h1 className="text-3xl font-bold flex items-center gap-2"> 
+            Agendamentos <CalendarCheck size={30}/>
+        </h1>
 
         <h2 className=" text-gray-600">
           Gerencie seus horários e Atendimentos.

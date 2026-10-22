@@ -68,7 +68,6 @@ export const FinanceDatas = () => {
 
         {/* grafico */}
         <FinanceChart/>
-        <FinanceChart/>
     </div>
   );
 };
