@@ -4,7 +4,7 @@ import { CircleDollarSign, Clock } from "lucide-react"
 
 export const ServiceOptions = () => {
     return(
-        <div className="grid grid-cols-4 pt-15 h-full pb-2 gap-y-8">
+        <div className="grid grid-cols-4 pt-15 h-full pb-2 gap-y-8 px-50">
             {Services.map((service) => (
                 <div className=" w-70 shadow-2xl shadow-gray-400 rounded-2xl p-2 ">
 

@@ -14,7 +14,7 @@ export const SideBar = () => {
   const user = null;
 
   return (
-    <aside className="bg-black w-60 shrink-0 min-h-screen text-white">
+    <aside className="bg-black w-60 sticky top-0 min-h-screen shrink-0 text-white z-50  ">
       <div className="flex min-h-full flex-col justify-between py-4 items-center">
         <div className="flex flex-col items-center">
           <h1 className="p-8 text-3xl">

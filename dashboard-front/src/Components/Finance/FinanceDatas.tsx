@@ -1,9 +1,10 @@
 import { TrendingUp, TrendingDown, Wallet, Clock } from "lucide-react";
+import { FinanceChart } from "./FinanceChart";
 
 
 export const FinanceDatas = () => {
   return (
-    <div className="pt-15 px-50 w-full flex flex-col gap-3">
+    <div className="pt-15 px-20 w-full flex flex-col gap-3">
       <div className="grid grid-cols-2 gap-5">
 
         {/* Inicio Receitas*/}
@@ -64,6 +65,9 @@ export const FinanceDatas = () => {
       </div>
         {/*FIM SEGUNDO GRID*/}
 
+
+        {/* grafico */}
+        <FinanceChart/>
     </div>
   );
 };
