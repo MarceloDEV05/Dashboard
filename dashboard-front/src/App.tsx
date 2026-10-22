@@ -21,15 +21,15 @@ export const router = createBrowserRouter([
       },
       {
         path: "/services",
-        element: <Services/>
+        element: <Services />,
       },
       {
         path: "/clients",
-        element: <Clients />
+        element: <Clients />,
       },
       {
         path: "/finance",
-        element: <Finance />
+        element: <Finance />,
       },
     ],
   },

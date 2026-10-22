@@ -3,17 +3,17 @@ import { AppointmentStatus } from "../../Components/Appointments/AppointmentsSta
 import { AppointmentsTable } from "../../Components/Appointments/AppoitmentsTable";
 
 export const Appointments = () => {
-    return(
-       <div className="h-full w-full"> 
-            <div>
-                <AppointmentsHeader/>
-            </div>
-            <div> 
-                <AppointmentStatus/>
-            </div>
-            <div>
-                <AppointmentsTable/>
-            </div>
-       </div>
-    )
-}
+  return (
+    <div className="h-full w-full">
+      <div>
+        <AppointmentsHeader />
+      </div>
+      <div>
+        <AppointmentStatus />
+      </div>
+      <div>
+        <AppointmentsTable />
+      </div>
+    </div>
+  );
+};

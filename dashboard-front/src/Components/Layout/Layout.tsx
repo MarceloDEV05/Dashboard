@@ -2,18 +2,14 @@ import { Outlet } from "react-router-dom";
 import { SideBar } from "../SideBar/SideBar";
 
 export function Layout() {
-return (
-  
-    <div className="flex h-screen w-full bg-slate-100">
-      
-      
-      <SideBar />
-
-     
-      <main className="flex-1 p-8">
-        <Outlet /> 
-      </main>
-
+  return (
+    <div className="flex">
+      <div className="fixed flex-1">
+        <SideBar />
+      </div>
+      <div className="flex-1 pl-70 p-8">
+        <Outlet />
+      </div>
     </div>
-  ); 
+  );
 }

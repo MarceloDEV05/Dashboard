@@ -3,18 +3,18 @@ import { ChartContainer,ChartTooltip, ChartTooltipContent, type ChartConfig } fr
 import { ChartLegend, ChartLegendContent } from "../ui/chart";
 
 const chartData = [
-  { month: "Jan", receita: 12750, despesas: 3450, saldo: 14000, receber: 430 },
-  { month: "Feb", receita: 12750, despesas: 3450, saldo: 14000, receber: 430 },
-  { month: "Mar", receita: 12750, despesas: 3450, saldo: 14000, receber: 430 },
-  { month: "Apr", receita: 12750, despesas: 3450, saldo: 14000, receber: 430 },
-  { month: "May", receita: 12750, despesas: 3450, saldo: 14000, receber: 430 },
-  { month: "Jun", receita: 12750, despesas: 3450, saldo: 14000, receber: 430 },
-  { month: "Jul", receita: 12750, despesas: 3450, saldo: 14000, receber: 430 },
-  { month: "Aug", receita: 12750, despesas: 3450, saldo: 14000, receber: 430 },
-  { month: "Sep", receita: 12750, despesas: 3450, saldo: 14000, receber: 430 },
-  { month: "Oct", receita: 12750, despesas: 3450, saldo: 14000, receber: 430 },
-  { month: "Nov", receita: 12750, despesas: 3450, saldo: 14000, receber: 430 },
-  { month: "Dec", receita: 12750, despesas: 3450, saldo: 14000, receber: 430 },
+  { month: "Jan", receita: 9000, despesas: 3000, saldo: 1000, receber: 4000 },
+  { month: "Feb", receita: 10000, despesas: 4000, saldo: 2000, receber: 5000 },
+  { month: "Mar", receita: 11000, despesas: 5000, saldo: 3000, receber: 6000 },
+  { month: "Apr", receita: 12000, despesas: 6000, saldo: 4000, receber: 7000},
+  { month: "May", receita: 13000, despesas: 7000, saldo: 5000, receber: 8000},
+  { month: "Jun", receita: 14000, despesas: 8000, saldo: 6000, receber: 9000 },
+  // { month: "Jul", receita: 12750, despesas: 3450, saldo: 1400, receber: 430 },
+  // { month: "Aug", receita: 12750, despesas: 3450, saldo: 14000, receber: 430 },
+  // { month: "Sep", receita: 1550, despesas: 3450, saldo: 1400, receber: 430 },
+  // { month: "Oct", receita: 12750, despesas: 3450, saldo: 14000, receber: 430 },
+  // { month: "Nov", receita: 12750, despesas: 3450, saldo: 14000, receber: 430 },
+  // { month: "Dec", receita: 15750, despesas: 3450, saldo: 14000, receber: 430 },
   
 ];
 
@@ -51,7 +51,7 @@ export const FinanceChart = () => {
         />
         <ChartTooltip content={<ChartTooltipContent/>} />
         <ChartLegend content={<ChartLegendContent /> } /> 
-        <Bar dataKey="receita" fill="var(--color-receita)" radius={4} />
+        <Bar dataKey="receita" fill="var(--color-receita)" radius={4} width={60}/>
         <Bar dataKey="despesas" fill="var(--color-despesas)" radius={4} />
         <Bar dataKey="saldo" fill="var(--color-saldo)" radius={4} />
         <Bar dataKey="receber" fill="var(--color-receber)" radius={4} />

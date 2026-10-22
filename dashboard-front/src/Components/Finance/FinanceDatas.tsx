@@ -4,7 +4,7 @@ import { FinanceChart } from "./FinanceChart";
 
 export const FinanceDatas = () => {
   return (
-    <div className="pt-15 px-20 w-full flex flex-col gap-3">
+    <div className="pt-15 w-full flex flex-col gap-3 ">
       <div className="grid grid-cols-2 gap-5">
 
         {/* Inicio Receitas*/}
@@ -67,6 +67,7 @@ export const FinanceDatas = () => {
 
 
         {/* grafico */}
+        <FinanceChart/>
         <FinanceChart/>
     </div>
   );
