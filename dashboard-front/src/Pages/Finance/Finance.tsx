@@ -4,12 +4,8 @@ import { FinanceDatas } from "../../Components/Finance/FinanceDatas";
 export const Finance = () => {
   return (
     <div>
-      <div>
-        <FinanceHeader />
-      </div>
-      <div>
-        <FinanceDatas />
-      </div>
+      <FinanceHeader />
+      <FinanceDatas />
     </div>
   );
 };

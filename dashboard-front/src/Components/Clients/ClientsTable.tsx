@@ -13,8 +13,11 @@ export const ClientsTable = () => {
         />
       </div>
       {ClientsInfo.map((client) => (
-        <div className="flex w-full justify-between pt-3 pb-3 items-center border-t border-b px-3">
-          <div className="">
+        <div
+          key={client.nome}
+          className="flex w-full items-center justify-between border-y px-3 py-3"
+        >
+          <div>
             <h1>{client.nome}</h1>
             <p>{client.telefone}</p>
           </div>

@@ -2,14 +2,14 @@ import { Users } from "lucide-react";
 
 export const ClientHeader = () => {
   return (
-    <div className="flex justify-between items-center">
+    <header className="flex items-center justify-between">
       <div>
-        <h1 className="text-3xl font-bold flex items-center gap-2">
-            Clientes < Users size={30}/>
-            </h1>
+        <h1 className="flex items-center gap-2 text-3xl font-bold">
+          Clientes <Users size={30} />
+        </h1>
 
-        <h2 className=" text-gray-600">Veja todos os clientes da barbearia.</h2>
+        <p className="text-gray-600">Veja todos os clientes da barbearia.</p>
       </div>
-    </div>
+    </header>
   );
 };

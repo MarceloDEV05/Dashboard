@@ -1,15 +1,15 @@
+import { SettingsData } from "../../Components/Settings/SettingsData";
 import { SettingsHeader } from "../../Components/Settings/SettingsHeader";
-import { SettingsTable } from "../../Components/Settings/Settings";
+import { SettingsSideBar } from "../../Components/Settings/SettingsSideBar";
 
 export const Settings = () => {
-    return (
-        <div>
-            <div>
-                <SettingsHeader />
-            </div>
-            <div>
-                <SettingsTable/>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div>
+      <SettingsHeader />
+      <div className="flex">
+        <SettingsSideBar />
+        <SettingsData />
+      </div>
+    </div>
+  );
+};

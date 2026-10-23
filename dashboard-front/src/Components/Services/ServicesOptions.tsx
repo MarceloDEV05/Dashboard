@@ -3,11 +3,18 @@ import { CircleDollarSign, Clock } from "lucide-react";
 
 export const ServiceOptions = () => {
   return (
-    <div className="grid grid-cols-4 pt-15 h-full pb-2 gap-y-8 px-50">
-      {Services.map((service) => (
-        <div className=" w-70 shadow-2xl shadow-gray-400 rounded-2xl p-2 ">
+    <div className="grid h-full grid-cols-4 gap-y-8 px-50 pt-15 pb-2">
+      {Services.map((service, index) => (
+        <div
+          key={`${service.title}-${index}`}
+          className="w-70 rounded-2xl p-2 shadow-2xl shadow-gray-400"
+        >
           <div className="flex flex-col gap-2">
-            <img src={service.img} alt="" className="rounded-t-xl" />
+            <img
+              src={service.img}
+              alt={`Imagem do serviço: ${service.title}`}
+              className="rounded-t-xl"
+            />
             <h1 className="text-xl font-semibold px-3">{service.title}</h1>
             <p className="text-sm text-gray-500 line-clamp-4 lg:line-clamp-none px-3">
               {service.description}

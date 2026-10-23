@@ -7,17 +7,17 @@ export const ClientStatus = () => {
         <div className="w-60 p-3 flex flex-col ">
           <Users color="orange" />
           <h2 className="font-bold text-2xl">128</h2>
-          <span className="">Clientes</span>
+          <span>Clientes</span>
         </div>
         <div className=" w-60 p-3 flex flex-col ">
           <UserRoundPlus color="green" />
           <h2 className="font-bold text-2xl ">125</h2>
-          <span className="text">Novos no mês</span>
+          <span>Novos no mês</span>
         </div>
         <div className="  w-60 p-3 flex flex-col ">
           <CalendarCheck color="blue" />
           <h2 className="font-bold text-2xl ">12</h2>
-          <span className="">Ativos</span>
+          <span>Ativos</span>
         </div>
       </div>
     </div>

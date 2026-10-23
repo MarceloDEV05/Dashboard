@@ -5,15 +5,9 @@ import { ClientStatus } from "../../Components/Clients/ClientStatus";
 export const Clients = () => {
   return (
     <div>
-      <div>
-        <ClientHeader />
-      </div>
-      <div>
-        <ClientStatus />
-      </div>
-      <div>
-        <ClientsTable />
-      </div>
+      <ClientHeader />
+      <ClientStatus />
+      <ClientsTable />
     </div>
   );
 };

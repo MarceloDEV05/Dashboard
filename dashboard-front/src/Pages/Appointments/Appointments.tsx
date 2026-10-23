@@ -5,15 +5,9 @@ import { AppointmentsTable } from "../../Components/Appointments/AppoitmentsTabl
 export const Appointments = () => {
   return (
     <div className="h-full w-full">
-      <div>
-        <AppointmentsHeader />
-      </div>
-      <div>
-        <AppointmentStatus />
-      </div>
-      <div>
-        <AppointmentsTable />
-      </div>
+      <AppointmentsHeader />
+      <AppointmentStatus />
+      <AppointmentsTable />
     </div>
   );
 };
